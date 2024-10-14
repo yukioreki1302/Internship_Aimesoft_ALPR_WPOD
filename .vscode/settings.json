@@ -2,9 +2,22 @@
     "cSpell.words": [
         "Aimesoft",
         "ALPR",
+        "astype",
+        "chiều",
+        "fromarray",
+        "Gradio",
+        "imread",
+        "ngang",
         "parseq",
+        "polylines",
+        "softmax",
+        "theo",
+        "torchvision",
+        "unsqueeze",
         "Viet",
+        "wapred",
         "wpod",
+        "wpodnet",
         "yukih"
     ]
 }
