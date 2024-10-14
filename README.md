@@ -22,5 +22,5 @@ This project aims to recognize license plates using a combination of WPOD (Weakl
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/Internship-Aimesoft-ALPR.git
+git clone https://github.com/yukioreki1302/Internship-Aimesoft-ALPR.git
 cd Internship-Aimesoft-ALPR/License_Plate_Recognition
