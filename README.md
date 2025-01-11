@@ -34,6 +34,8 @@ Dự án Nhận diện Biển số Xe (LPR) kết hợp các mô hình học má
 - **Giao diện Gradio**: Cung cấp giao diện trực quan cho người dùng tải lên hình ảnh hoặc sử dụng webcam để xử lý.
 
 ---
+![image](https://github.com/user-attachments/assets/277d4d81-807d-4ce0-8051-a24bdf2e9ea1)
+
 
 ## Cài đặt
 
@@ -72,6 +74,9 @@ pip install -r requirements.txt
 ### Các tùy chọn đầu vào:
 - **Tải lên hình ảnh**: Chọn một hình ảnh từ thiết bị của bạn để nhận diện biển số xe.
 - **Nguồn webcam**: Sử dụng webcam để phát hiện và nhận diện thời gian thực.
+![image](https://github.com/user-attachments/assets/9ceb9403-8011-4e2c-a560-e8abfa0e61d6)
+![image](https://github.com/user-attachments/assets/203cea03-1a64-487d-986f-976bd1c2470c)
+
 
 ---
 
