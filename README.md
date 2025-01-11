@@ -1,51 +1,144 @@
-# License Plate Recognition
+# Dự án Nhận diện Biển số Xe
 
-🌍 License plate recognition with WPOD and PARSeq
+Dự án này tập trung vào việc phát hiện và nhận diện biển số xe từ hình ảnh bằng cách kết hợp WPOD (Weakly-supervised Positioning Object Detection) và PARSeq (Parallel Sequence). Hệ thống có khả năng phát hiện chính xác biển số xe và nhận diện các ký tự trên đó. Ngoài ra, dự án cũng cung cấp một giao diện thân thiện với người dùng để tương tác.
 
-## Overview
+---
 
-This project aims to recognize license plates using a combination of WPOD (Weakly-supervised Positioning Object Detection) and PARSeq (Parallel Sequence). The system is designed to detect and read license plates from images or webcam feeds.
+## Mục lục
+- [Giới thiệu](#giới-thiệu)
+- [Tính năng](#tính-năng)
+- [Cài đặt](#cài-đặt)
+  - [Yêu cầu hệ thống](#yêu-cầu-hệ-thống)
+  - [Clone Repository](#clone-repository)
+- [Cách sử dụng](#cách-sử-dụng)
+- [Cấu trúc dự án](#cấu-trúc-dự-án)
+- [Chi tiết mô hình](#chi-tiết-mô-hình)
+- [Lời cảm ơn](#lời-cảm-ơn)
 
-## Features
+---
 
-- **License Plate Detection**: Utilizes WPOD for detecting license plates in images.
-- **License Plate Recognition**: Uses PARSeq for recognizing the characters on the detected license plates.
-- **Gradio Interface**: Provides a user-friendly interface for uploading images or using a webcam for real-time recognition.
+## Giới thiệu
 
-## Installation
+Dự án Nhận diện Biển số Xe (LPR) kết hợp các mô hình học máy tiên tiến để phát hiện và nhận diện biển số xe. Dự án sử dụng WPOD để phát hiện biển số và PARSeq để nhận diện ký tự, cung cấp một giải pháp mạnh mẽ cho các ứng dụng thực tế như giám sát giao thông, hệ thống đỗ xe, và thu phí tự động.
 
-### Prerequisites
+### Công nghệ chính:
+- **WPOD**: Một mạng nơ-ron được thiết kế để phát hiện chính xác biển số xe trong nhiều góc độ và điều kiện ánh sáng khác nhau.
+- **PARSeq**: Mô hình nhận diện chuỗi đảm bảo khả năng nhận diện ký tự chính xác và hiệu quả từ hình ảnh biển số xe.
 
-- Python 3.10
-- Docker (optional, for containerized deployment)
+---
 
-### Clone the Repository
+## Tính năng
+- **Phát hiện biển số xe**: Sử dụng WPOD để phát hiện biển số xe đáng tin cậy.
+- **Nhận diện ký tự**: Tận dụng PARSeq để nhận diện chính xác các ký tự trên biển số xe.
+- **Hỗ trợ thời gian thực**: Hỗ trợ phát hiện và nhận diện thời gian thực từ nguồn webcam.
+- **Giao diện Gradio**: Cung cấp giao diện trực quan cho người dùng tải lên hình ảnh hoặc sử dụng webcam để xử lý.
 
-```sh
+---
+
+## Cài đặt
+
+### Yêu cầu hệ thống
+Để chạy dự án này, đảm bảo bạn đã cài đặt các công cụ sau:
+- **Python 3.10**
+- **Docker** (tùy chọn, để triển khai container hóa)
+
+### Clone Repository
+```bash
+# Clone repository
 git clone https://github.com/yukioreki1302/Internship-Aimesoft-ALPR.git
+
+# Di chuyển vào thư mục dự án
 cd Internship-Aimesoft-ALPR/License_Plate_Recognition
+```
 
-# Dự Án Nhận Diện Biển Số Xe
+### Cài đặt các thư viện cần thiết
+```bash
+# Cài đặt các thư viện Python
+pip install -r requirements.txt
+```
 
-Dự án này tập trung vào việc nhận diện biển số xe từ hình ảnh bằng cách kết hợp WPOD-NET để phát hiện biển số và PARSeq để nhận diện ký tự.
+---
 
-## Mục Lục
-- [Giới Thiệu](#giới-thiệu)
-- [Cài Đặt](#cài-đặt)
-- [Sử Dụng](#sử-dụng)
-- [Cấu Trúc Dự Án](#cấu-trúc-dự-án)
-- [Chi Tiết Mô Hình](#chi-tiết-mô-hình)
-- [Cảm Ơn](#cảm-ơn)
+## Cách sử dụng
 
-## Giới Thiệu
+### Chạy dự án
+1. Chạy giao diện Gradio để xử lý hình ảnh hoặc nguồn webcam:
+   ```bash
+   python app.py
+   ```
 
-Mục tiêu của dự án này là phát hiện và nhận diện chính xác biển số xe từ hình ảnh. Dự án sử dụng WPOD-NET để phát hiện biển số và PARSeq để nhận diện các ký tự trên biển số.
+2. Truy cập giao diện Gradio thông qua URL localhost được cung cấp trên trình duyệt.
 
-## Cài Đặt
+### Các tùy chọn đầu vào:
+- **Tải lên hình ảnh**: Chọn một hình ảnh từ thiết bị của bạn để nhận diện biển số xe.
+- **Nguồn webcam**: Sử dụng webcam để phát hiện và nhận diện thời gian thực.
 
-Để bắt đầu với dự án, hãy làm theo các bước sau:
+---
 
-1. Clone repository:
-   ```sh
-   git clone https://github.com/yourusername/License_Plate_Recognition.git
-   cd License_Plate_Recognition
+## Cấu trúc dự án
+```
+.codegpt/
+.head
+.gitignore
+.gradio/
+.certificate.pem
+.vscode/
+.settings.json
+flagged/
+License_Plate_Recognition/
+    .gitattributes
+    .gitignore
+    app.py
+    parseq/
+        __pycache__/
+        augmentation.py
+        config.yaml
+        module.py
+        system.py
+        utils.py
+    README.md
+    requirements.txt
+    test.ipynb
+    weights/
+        best.ckpt
+        checkpoint.ckpt
+        parseq.ckpt
+        test
+        wpod-net.h5
+    wpodnet/
+        __init__.py
+        __pycache__/
+        backend.py
+        lib_detection.py
+        model.py
+        stream.py
+```
+
+---
+
+## Chi tiết mô hình
+
+### WPOD (Weakly-supervised Positioning Object Detection):
+- Chịu trách nhiệm phát hiện biển số xe trong hình ảnh.
+- Xử lý các góc độ, hướng, và điều kiện ánh sáng khác nhau.
+
+### PARSeq (Parallel Sequence):
+- Thực hiện nhận diện ký tự trên các biển số đã được phát hiện.
+- Đảm bảo độ chính xác cao và hiệu quả trong việc đọc chuỗi ký tự.
+
+---
+
+## Lời cảm ơn
+- **WPOD**: Được tùy chỉnh từ [WPOD-Net GitHub Repository](https://github.com/xiezhq-herbert/WPOD-Net).
+- **PARSeq**: Dựa trên [PARSeq Research Paper and Codebase](https://github.com/mlfoundations/parseq).
+- Đặc biệt cảm ơn [Aimesoft](https://www.aimesoft.com) đã hỗ trợ và chương trình thực tập để phát triển dự án này.
+
+---
+
+## Cải tiến trong tương lai
+- Bổ sung hỗ trợ nhận diện đa ngôn ngữ.
+- Tích hợp với dịch vụ đám mây để triển khai trên quy mô lớn.
+- Cải thiện tốc độ và độ chính xác phát hiện với các mô hình được tối ưu hóa.
+
+---
+
