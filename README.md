@@ -136,7 +136,7 @@ License_Plate_Recognition/
 ## Lời cảm ơn
 - **WPOD**: Được tùy chỉnh từ [WPOD-Net GitHub Repository](https://github.com/xiezhq-herbert/WPOD-Net).
 - **PARSeq**: Dựa trên [PARSeq Research Paper and Codebase](https://github.com/mlfoundations/parseq).
-- Đặc biệt cảm ơn [Aimesoft](https://www.aimesoft.com) đã hỗ trợ và chương trình thực tập để phát triển dự án này.
+
 
 ---
 
