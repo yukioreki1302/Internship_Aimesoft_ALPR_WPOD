@@ -75,7 +75,7 @@ pip install -r requirements.txt
 - **Tải lên hình ảnh**: Chọn một hình ảnh từ thiết bị của bạn để nhận diện biển số xe.
 - **Nguồn webcam**: Sử dụng webcam để phát hiện và nhận diện thời gian thực.
 ![image](https://github.com/user-attachments/assets/9ceb9403-8011-4e2c-a560-e8abfa0e61d6)
-![image](https://github.com/user-attachments/assets/203cea03-1a64-487d-986f-976bd1c2470c)
+
 
 
 ---
