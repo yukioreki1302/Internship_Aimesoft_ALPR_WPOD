@@ -123,11 +123,11 @@ License_Plate_Recognition/
 
 ## Chi tiết mô hình
 
-### WPOD (Weakly-supervised Positioning Object Detection):
+### WPOD (Wraped Planer Object Detection Network):
 - Chịu trách nhiệm phát hiện biển số xe trong hình ảnh.
 - Xử lý các góc độ, hướng, và điều kiện ánh sáng khác nhau.
 
-### PARSeq (Parallel Sequence):
+### PARSeq (Permuted Autoregressive Sequence Models):
 - Thực hiện nhận diện ký tự trên các biển số đã được phát hiện.
 - Đảm bảo độ chính xác cao và hiệu quả trong việc đọc chuỗi ký tự.
 
