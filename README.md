@@ -78,6 +78,7 @@ pip install -r requirements.txt
 - **Nguồn webcam**: Sử dụng webcam để phát hiện và nhận diện thời gian thực.
 ![image](https://github.com/user-attachments/assets/9ceb9403-8011-4e2c-a560-e8abfa0e61d6)
 
+![image](https://github.com/user-attachments/assets/12371a96-a5e1-4375-9a40-03297acb9432)
 
 
 ---
