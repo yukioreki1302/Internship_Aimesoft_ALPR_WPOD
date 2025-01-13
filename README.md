@@ -1,7 +1,7 @@
 # Dự án Nhận diện Biển số Xe
 
 
-Dự án này tập trung vào việc phát hiện và nhận diện biển số xe từ hình ảnh bằng cách kết hợp WPOD (Weakly-supervised Positioning Object Detection) và PARSeq (Parallel Sequence). Hệ thống có khả năng phát hiện chính xác biển số xe và nhận diện các ký tự trên đó. Ngoài ra, dự án cũng cung cấp một giao diện thân thiện với người dùng để tương tác.
+Dự án này tập trung vào việc phát hiện và nhận diện biển số xe từ hình ảnh bằng cách kết hợp WPOD (Wraped Planer Object Detection Network) và PARSeq (Permuted Autoregressive Sequence Models). Hệ thống có khả năng phát hiện chính xác biển số xe và nhận diện các ký tự trên đó. Ngoài ra, dự án cũng cung cấp một giao diện thân thiện với người dùng để tương tác.
 
 ---
 Link demo: https://bd2c34f8cbe5e32f09.gradio.live/
